@@ -1,0 +1,75 @@
+@import 'tailwindcss';
+
+
+:root {
+    --bg-color: #F7F5F8;
+    --main-text-color: #000000D9;
+    --secondary-text-color: #848388;
+    --input-color: #F6F6F8;
+    --blue-color: #1890FF;
+}
+
+body {
+    background-color: var(--bg-color);
+}
+
+#arrow-img {
+    transform: rotateX(180deg);
+}
+
+#list-checkbox:checked + #arrow-img {
+    transform: none;
+}
+
+#switch-point {
+    margin: 0;
+    margin-right: auto;
+}
+
+#switch-checkbox:checked + #switch-point {
+    margin: 0;
+    margin-left: auto;
+}
+
+#switch:has(#switch-checkbox:checked) {
+    background-color: #1890FF;
+}
+
+#edit-form input, #edit-form select {
+    border: 1px #D9D9D9 solid;
+    border-radius: 8px;
+    padding: 4px 12px;
+    color: var(--main-text-color);
+    font-size: 14px;
+    line-height: 22px;
+    width: 456px;
+    font-family: 'Roboto', sans-serif;
+}
+
+#edit-form label {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    line-height: 22px;
+}
+
+#edit-form input::placeholder {
+    color: #00000040;
+}
+
+#edit-form input:focus, #edit-form select:focus, #edit-form textarea:focus {
+    border: 1px #40A9FF solid !important;
+    outline: 2px #1890FF33 solid;
+}
+
+#edit-form:invalid #price-input, #edit-form:invalid #title-input {
+    border: 1px #EC221F solid;
+}
+
+.form-line {
+    height: 1px;
+    background-color: #F0F0F0;
+}
+
+#page-edit-item {
+    font-family: 'Roboto', sans-serif;
+}

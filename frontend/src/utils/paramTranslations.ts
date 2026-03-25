@@ -1,0 +1,13 @@
+export const Translations = new Map<string, string>()
+            .set("brand", "Бренд")
+            .set("model", "Модель")
+            .set("yearOfManufacture", "Год изготавления")
+            .set("transmission", "Коробка передач")
+            .set("mileage", "Пробег")
+            .set("enginePower", "Мощность двигателя")
+            .set("type", "Тип")
+            .set("address", "Адрес")
+            .set("area", "Площадь")
+            .set("floor", "Этаж")
+            .set("condition", "Состояние")
+            .set("color", "Цвет");
